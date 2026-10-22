@@ -1,0 +1,34 @@
+.web
+.states
+# Reflex
+.web/
+.states/
+reflex.lock/
+assets/external/
+*.db
+reflex.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.python-version.local
+
+# Environment and OS
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+
+# Frontend toolchain Reflex downloads locally
+node_modules/
+bun.lock
+package-lock.json
