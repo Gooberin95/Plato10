@@ -4,6 +4,7 @@
 .web/
 .states/
 reflex.lock/
+deploy-package/
 assets/external/
 *.db
 reflex.db

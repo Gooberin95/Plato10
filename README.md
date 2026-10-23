@@ -55,6 +55,10 @@ Run `reflex init` only if you have deleted those files and want Reflex to scaffo
 
 The painting is `assets/background.jpg`. Outfit and JetBrains Mono live in `assets/fonts/` so the page does not depend on a font CDN.
 
+## Deploying to Azure
+
+Production deploys go to Azure App Service on Linux with the built-in Python 3.14 runtime, not a container. GitHub Actions builds the Reflex frontend once, and App Service serves that build and the backend on one port. Until `AZURE_DEPLOY_ENABLED` is `true`, the workflow only runs the build. Setup, secrets, and the web app names are in [DEPLOY.md](DEPLOY.md).
+
 ## Layout
 
 ```
